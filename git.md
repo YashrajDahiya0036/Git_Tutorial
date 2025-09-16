@@ -4,6 +4,8 @@
 
 [Youtube link](https://www.youtube.com/watch?v=S7XpTAnSDL4)
 
+[Notebook](https://notebooklm.google.com/notebook/0c8695d3-dbf4-457f-8ade-da1f506c15cf)
+
 - Configuration
 
   - To start a reop `git init`
@@ -156,3 +158,30 @@
     - It also deletes the changes after the selected commit.
 
       <pre>git reset --hard PREVIOUS_COMMIT_HASH</pre>
+
+---
+
+- Revert
+  - It works similar to `git reset` but it keeps the commit history
+
+  <pre>git revert PREVIOUS_COMMIT_HASH</pre>
+
+---
+
+- Stash
+  - It saves the code after your last commit and stashed it and removes it from current code.
+
+    <pre>git stash</pre>
+  - Then you can write other code stage, commit, push it.
+  - Later you can get back that code using
+
+    <pre>git stash apply STASH_ID</pre>
+    > Use quotes around "STASH_ID" as sometimes it produces error
+    > Or just use `git stash apply` to use the latest stash
+  - You can get the list of stash by
+
+    <pre>git stash list</pre>
+
+  - To delete a stash
+
+    <pre>git stash pop</pre>
