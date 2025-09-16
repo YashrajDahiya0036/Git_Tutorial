@@ -1,5 +1,9 @@
 # Starting Git
 
+[Interactive way to learn git](https://learngitbranching.js.org)
+
+[Youtube link](https://www.youtube.com/watch?v=S7XpTAnSDL4)
+
 - Configuration
 
   - To start a reop `git init`
@@ -109,10 +113,12 @@
   - If you are ahead or there are no changes then pull does not do anything.
 
     <pre>git pull</pre>
+    - the git by default pulls from the branch you are on
 
 ---
 
 - Merging
+
   - You can do it in the browser by creating a pull request
   - Or you can use CLI
     - **Step 1.** Clone the repository or update your local repository with the latest changes.
@@ -130,3 +136,23 @@
     - **Step 4.** Push the changes.
 
         <pre>git push -u origin main</pre>
+
+---
+
+- Reset
+  - Soft Reset
+    - It is used to delete commits but keep the code.
+    - It keeps the files which have their commit removed in a staged state.
+
+      <pre>git reset --soft PREVIOUS_COMMIT_HASH</pre>
+  
+  - Mixed Reset
+    - It removes the commit but now the files are just present in directory but not staged.
+
+      <pre>git reset PREVIOUS_COMMIT_HASH
+
+  - Hard Reset
+    - It delets every change after the specified commit.
+    - It also deletes the changes after the selected commit.
+
+      <pre>git reset --hard PREVIOUS_COMMIT_HASH</pre>
