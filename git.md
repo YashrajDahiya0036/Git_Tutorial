@@ -5,6 +5,7 @@
   - To set user name `git --global user.name 'NAME'`
   - To set email name `git --global user.email 'EMAIL'`
   - To set name of master branch `git config --global init.defaultBranch <name>`
+  - To update the name of master branch `git branch -M main`
 
 - Adding(Staging) files
   - To add a file to stage
