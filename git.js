@@ -3,3 +3,6 @@
 // git commit -m 'add the commit message'
 // git staus to track the status of files 
 // git log shows the previous commits 
+
+
+git trial commit
