@@ -25,3 +25,5 @@
     <pre>git checkout GITHASH</pre>
   - To switch back to main branch
     <pre>git checkout main</pre>
+  - To discard changes and switch back to main
+    <pre>git checkout -f main</pre>
