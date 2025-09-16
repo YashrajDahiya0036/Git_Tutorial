@@ -5,13 +5,13 @@
 
 // git add filename to add a single file to stage
 // git commit -m 'add the commit message'
-// git staus to track the status of files 
-// git log shows the previous commits 
+// git staus to track the status of files
+// git log shows the previous commits
 
 
 // git trial commit
 
-// git checkout hash to switch to a specific commit 
+// git checkout hash to switch to a specific commit
 // git checkout main to switch back to master branch
 
 
@@ -57,11 +57,22 @@
 
 // Copy your key:
 
-// cat ~/.ssh/id_ed25519.pub
+// cat ~/.ssh/id_ed25519.pub | clip
 
 
 // Then add it in GitHub → Settings → SSH and GPG keys → New SSH key.
 
 // Update remote to use SSH instead of HTTPS:
 
+// git remote set-url origin git@github.com:YashrajDahiya0036/Musicly.git
+
+
+// Quick
+
+// ssh-keygen -t ed25519 -C "yashrajdahiya0036@gmail.com"
+// asks if you want to add a password for your ssh key(then you need to use this password to use the ssh key)
+// eval "$(ssh-agent -s)"
+// ssh-add ~/.ssh/id_ed25519
+// cat ~/.ssh/id_ed25519.pub | clip
+// Then add it in GitHub → Settings → SSH and GPG keys → New SSH key.
 // git remote set-url origin git@github.com:YashrajDahiya0036/Musicly.git
