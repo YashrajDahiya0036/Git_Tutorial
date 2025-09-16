@@ -7,7 +7,7 @@
   - To set name of master branch `git config --global init.defaultBranch <name>`
 
 - Adding(Staging) files
-  - To add a file to stage(start tracking)
+  - To add a file to stage
     <pre>git add filename</pre>
   - To add all files
     <pre>git add ./</pre>
@@ -19,6 +19,8 @@
     <pre>git staus</pre>
   - To show commit history
     <pre>git log</pre>
+  - To commit without staging
+    <pre>git commit -a -m 'MESSAGE'</pre>
 
 - Rollbacks
   - To go back to a specific commit
