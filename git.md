@@ -107,5 +107,26 @@
 
   - Pull means to get code say if someone else updated the remote branch or merged in a branch then you can get that code by a pull request.
   - If you are ahead or there are no changes then pull does not do anything.
-  
+
     <pre>git pull</pre>
+
+---
+
+- Merging
+  - You can do it in the browser by creating a pull request
+  - Or you can use CLI
+    - **Step 1.** Clone the repository or update your local repository with the latest changes.
+
+        <pre>git pull origin main</pre>
+
+    - **Step 2.** Switch to the base branch of the pull request.
+
+        <pre>git checkout main</pre>
+
+    - **Step 3.** Merge the head branch into the base branch.
+
+        <pre>git merge feat-branch</pre>
+
+    - **Step 4.** Push the changes.
+
+        <pre>git push -u origin main</pre>
