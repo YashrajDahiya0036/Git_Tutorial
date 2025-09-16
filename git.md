@@ -30,3 +30,10 @@
     <pre>git checkout main</pre>
   - To discard changes and switch back to main
     <pre>git checkout -f main</pre>
+
+- Remote Connection
+  - To add a repo url
+  - Might have to use SSH key (see git.js on how to set up)
+    <pre>git remote origin add REPO_URL</pre>
+  - Now you can push
+    <pre>git push -u origin main</pre>
